@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>联系我们 - 中平筑业设计有限公司江汉分公司</title>
+    <link rel="stylesheet" href="6626-rar/css/main.css">
+</head>
+<body>
+    <!-- 头部 -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <a href="index.html" class="logo">江汉分公司</a>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">首页</a></li>
+                        <li><a href="about.html">关于我们</a></li>
+                        <li><a href="contact.html">联系我们</a></li>
+                    </ul>
+                </nav>
+
+            </div>
+        </div>
+    </header>
+
+    <!-- 主内容 -->
+    <main>
+        <div class="container">
+            <h2>联系我们</h2>
+            
+            <!-- 联系信息网格 -->
+            <div class="contact-grid">
+                <!-- 公司基本信息 -->
+                <section class="card">
+                    <h3>公司联系方式</h3>
+                    <div class="contact-info">
+                        <p><strong>公司全称：</strong>中平筑业设计有限公司江汉分公司</p>
+                        <p><strong>成立时间：</strong>2024年12月</p>
+                        <p><strong>法定代表人：</strong>丁菲</p>
+                        <p><strong>注册地址：</strong>湖北省天门市人民大道东152号</p>
+                        <p><strong>隶属关系：</strong>隶属于中平筑业设计有限公司的分公司</p>
+                        <p><strong>联系电话：</strong>181 2534 9919</p>
+                        <p><strong>电子邮箱：</strong>info@zhongpingzhuye.com</p>
+                    </div>
+                </section>
+
+                <!-- 公司位置 -->
+                <section class="card">
+                    <h3>公司位置</h3>
+                    <div class="map-container">
+                        <p>地图加载中...</p>
+                        <!-- 实际项目中可嵌入百度地图或高德地图 -->
+                    </div>
+                </section>
+            </div>
+
+            <!-- 项目合作咨询 -->
+            <section class="card">
+                <h3>项目合作咨询</h3>
+                <form id="project-form">
+                    <div class="business-grid">
+                        <div class="form-group">
+                            <label for="project-name">项目名称</label>
+                            <input type="text" id="project-name" name="project-name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="project-type">项目类型</label>
+                            <select id="project-type" name="project-type" required>
+                                <option value="">请选择项目类型</option>
+                                <option value="建筑设计">建筑设计</option>
+                                <option value="市政工程">市政工程</option>
+                                <option value="工程监理">工程监理</option>
+                                <option value="工程勘察">工程勘察</option>
+                                <option value="工程测绘">工程测绘</option>
+                                <option value="工程咨询">工程咨询</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="project-scale">项目规模</label>
+                            <input type="text" id="project-scale" name="project-scale" placeholder="例如：10万平方米" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="project-location">项目地点</label>
+                            <input type="text" id="project-location" name="project-location" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="contact-person">联系人</label>
+                            <input type="text" id="contact-person" name="contact-person" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="contact-phone">联系电话</label>
+                            <input type="tel" id="contact-phone" name="contact-phone" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="project-description">项目描述</label>
+                        <textarea id="project-description" name="project-description" placeholder="请简要描述您的项目需求" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">提交咨询</button>
+                </form>
+            </section>
+        </div>
+    </main>
+
+    <!-- 项目咨询结果模态窗口 -->
+    <div id="project-result-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h3>合作咨询结果</h3>
+            
+            <!-- 部门联系方式 -->
+            <div class="modal-section">
+                <h4>相关部门联系方式</h4>
+                <div id="department-contact">
+                    <!-- 联系方式将通过JavaScript动态插入 -->
+                </div>
+            </div>
+            
+            <!-- 优秀案例展示 -->
+            <div class="modal-section" style="margin-top: 2rem;">
+                <h4>相关优秀案例</h4>
+                <div id="case-studies" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem;">
+                    <!-- 案例将通过JavaScript动态插入 -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 页脚 -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <p>中平筑业设计有限公司江汉分公司</p>
+                    <p>地址：湖北省天门市人民大道东152号</p>
+                    <p>电话：181 2534 9919</p>
+                </div>
+                <div class="footer-copyright">
+                    <p>&copy; 2024 中平筑业设计有限公司江汉分公司. 保留所有权利.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="6626-rar/js/main.js"></script>
+    <script src="6626-rar/js/project.js"></script>
+</body>
+</html>
